@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.loading {
+    display: none;
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    right: 10vw;
+    bottom: 30vh;
+    background-color: #252525d3;
+    z-index: 9999;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.loading h3 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 0 0 10px #fff;
+
+}
+
+#mensajes .id {
+    color: blue;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+#mensajes .time {
+    color: gold;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+#mensajes .text {
+    color: green;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+#mensajes .avatar {
+    height: 4.5rem;
+    width: 4.5rem;
+    object-fit: cover;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.user {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #252525;
+}
+
+.user div {
+    display: flex;
+    align-items: baseline;
+}
+
+.user div h3 {
+    color: rgb(90, 90, 173);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: .5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.user div p {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: .5rem;
+}
+
+.user button {
+    margin: 1rem;
+}
+
+.parpadea {
+
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
